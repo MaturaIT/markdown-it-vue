@@ -1,11 +1,10 @@
 {
   "name": "markdown-it-vue",
-  "version": "1.1.4",
-  "private": false,
+  "version": "1.0",
+  "private": true,
   "description": "The vue lib for markdown-it",
   "author": {
-    "name": "ravenq",
-    "e-mail": "flw_dream@126.com"
+    "name": "MaturaIT"
   },
   "keywords": [
     "markdown",
@@ -25,7 +24,8 @@
     "lint": "vue-cli-service lint",
     "build:example": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --dest example/dist ./example/main.js",
     "build:lib": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib ./src/index.js",
-    "build:light": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name markdown-it-vue-light --no-clean ./src/index-light.js"
+    "build:light": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name markdown-it-vue-light --no-clean ./src/index-light.js",
+    "build:maturait": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name markdown-it-vue-maturait --no-clean ./src/index-maturait.js"
   },
   "main": "dist/markdown-it-vue.umd.min.js",
   "dependencies": {
@@ -34,6 +34,7 @@
     "font-awesome-icon-chars": "^2.6.0",
     "github-markdown-css": "^4.0.0",
     "highlight.js": "^10.2.1",
+    "katex": "^0.12.0",
     "markdown-it": "^11.0.1",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-container": "^3.0.0",
@@ -50,6 +51,7 @@
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
     "markdown-it-task-lists": "^2.1.1",
+    "markdown-it-texmath": "^0.8.0",
     "markdown-it-toc-and-anchor": "^4.1.2",
     "mermaid": "^8.8.1",
     "vue": "^2.6.12"
@@ -89,13 +91,10 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "bugs": {
-    "url": "https://github.com/ravenq/markdown-it-vueissues"
-  },
-  "homepage": "https://github.com/ravenq/markdown-it-vue",
+  "homepage": "https://github.com/MaturaIT/markdown-it-vue",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ravenq/markdown-it-vue.git"
+    "url": "git+https://github.com/MaturaIT/markdown-it-vue.git"
   }
 }

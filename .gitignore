@@ -2,6 +2,7 @@
 node_modules
 /dist
 /example/dist/
+.yarn
 
 # local env files
 .env.local
@@ -20,3 +21,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+
+.yarnrc
