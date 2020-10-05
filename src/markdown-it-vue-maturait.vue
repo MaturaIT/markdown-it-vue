@@ -73,7 +73,8 @@ export default {
       default() {
         return {
           markdownIt: {
-            linkify: true
+            linkify: true,
+            html: true
           },
           linkAttributes: DEFAULT_OPTIONS_LINK_ATTRIBUTES,
         //   katex: DEFAULT_OPTIONS_KATEX,
