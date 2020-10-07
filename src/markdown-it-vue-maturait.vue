@@ -205,6 +205,21 @@ export default {
           }
         }
       })
+      .use(MarkdownItContainer, 'spoiler', {
+        validate: function(params) {
+          return params.trim().match(/^spoiler\s+(.*)$/);
+        },
+        render: function (tokens, idx) {
+          var m = tokens[idx].info.trim().match(/^spoiler\s+(.*)$/);
+
+          if (tokens[idx].nesting === 1) {
+            return '<details><summary>' + md.utils.escapeHtml(m[1]) + '</summary>\n';
+
+          } else {
+            return '</details>\n';
+          }
+        }
+      })
     return {
       md: md
     }
