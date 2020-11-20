@@ -20,6 +20,7 @@
     "dev": "vue-cli-service serve ./example/main.js",
     "build": "npm run build:maturait",
     "lint": "vue-cli-service lint",
+    "postinstall": "npm run build:maturait",
     "build:example": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --dest example/dist ./example/main.js",
     "build:lib": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib ./src/index.js",
     "build:light": "node --max_old_space_size=8192 node_modules/@vue/cli-service/bin/vue-cli-service.js build --target lib --name markdown-it-vue-light --no-clean ./src/index-light.js",
